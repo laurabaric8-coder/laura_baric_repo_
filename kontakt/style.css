@@ -1,0 +1,30 @@
+body {
+    background-color: #fff0f6;
+    font-family: Arial, sans-serif;
+}
+
+.form-box {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+    color: #d63384;
+}
+
+label {
+    color: #e64980;
+    font-weight: bold;
+}
+
+.btn-pink {
+    background-color: #d63384;
+    color: white;
+}
+
+.btn-pink:hover {
+    background-color: #c2186a;
+    color: white;
+}
