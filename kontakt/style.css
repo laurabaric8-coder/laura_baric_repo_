@@ -1,13 +1,14 @@
 body {
     background-color: #af6d89;
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Arial, sans-serif; 
+    min-height: 100vh; 
 }
 
 .form-box {
     background: white;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    padding: 40px; 
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);  
 }
 
 h1 {
@@ -22,6 +23,10 @@ label {
 .btn-pink {
     background-color: #d63384;
     color: white;
+    font-weight: bold;
+    border: none;
+    padding: 10px;
+    transition: background 0.3s ease;
 }
 
 .btn-pink:hover {
