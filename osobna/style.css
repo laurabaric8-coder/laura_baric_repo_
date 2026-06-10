@@ -34,3 +34,25 @@ h2 {
     border-radius: 15px;
     box-shadow: 0 3px 10px rgba(0,0,0,0.1);
 }
+
+@media (max-width: 768px) {
+
+    h1 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .profile-img {
+        width: 160px;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .box, .profile-box, .form-box {
+        margin-bottom: 15px;
+        padding: 15px;
+    }
+
+}

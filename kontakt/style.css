@@ -28,3 +28,25 @@ label {
     background-color: #c2186a;
     color: white;
 }
+
+@media (max-width: 768px) {
+
+    h1 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .profile-img {
+        width: 160px;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .box, .profile-box, .form-box {
+        margin-bottom: 15px;
+        padding: 15px;
+    }
+
+}

@@ -10,39 +10,74 @@
 
 <body>
 
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+
+        <a class="navbar-brand" href="../index.html">Moja Web</a>
+
+        <div class="navbar-nav ms-auto">
+            <a class="nav-link" href="../index.html">Home</a>
+            <a class="nav-link" href="../osobna/index.html">Osobna</a>
+            <a class="nav-link" href="index.html">Kontakt</a>
+        </div>
+
+    </div>
+</nav>
+
 <div class="container mt-5">
 
     <div class="form-box">
 
         <h1 class="text-center mb-4">Kontaktirajte Nas</h1>
 
-        <form action="#" method="GET">
+        <form action="#" method="GET" id="kontaktForma">
 
             <div class="row">
 
                 <div class="col-md-6 mb-3">
                     <label>Ime</label>
-                    <input type="text" class="form-control" name="ime" required>
+                    <input type="text"
+                           class="form-control"
+                           name="ime"
+                           required
+                           pattern="[A-Za-z]+">
                 </div>
 
                 <div class="col-md-6 mb-3">
-                    <label>Email</label>
-                    <input type="email" class="form-control" name="email" required>
+                    <label>Prezime</label>
+                    <input type="text"
+                           class="form-control"
+                           name="prezime"
+                           required
+                           pattern="[A-Za-zČĆŽŠĐčćžšđ]+">
                 </div>
 
+            </div>
+
+            <div class="mb-3">
+                <label>Email</label>
+                <input type="email"
+                       class="form-control"
+                       name="email"
+                       required>
             </div>
 
             <div class="mb-3">
                 <label>Datum</label>
-                <input type="date" class="form-control" name="datum">
+                <input type="date"
+                       class="form-control"
+                       name="datum">
             </div>
 
             <div class="mb-3">
                 <label>Poruka</label>
-                <textarea class="form-control" name="poruka" rows="5" required></textarea>
+                <textarea class="form-control"
+                          name="poruka"
+                          rows="5"
+                          required></textarea>
             </div>
 
-            <button class="btn btn-pink w-100" type="submit">
+            <button type="submit" class="btn btn-pink w-100">
                 Pošalji Poruku
             </button>
 
