@@ -4,12 +4,50 @@
     <meta charset="UTF-8">
     <title>Moji Web Zadaci</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-</head>
-<body class="bg-light">
+    <style>
+        body {
+            background-color: #af6d89; 
+            font-family: 'Arial', sans-serif;
+            min-height: 100vh;
+        }
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        .navbar {
+            background-color: #d63384 !important; 
+        }
+
+        .hero-box {
+            background: white;
+            padding: 60px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+            text-align: center;
+        }
+
+        h1 {
+            color: #d63384;
+        }
+
+        .btn-pink {
+            background-color: #d63384;
+            color: white;
+            border-radius: 50px; 
+            padding: 12px 30px;
+            border: none;
+            transition: 0.3s;
+        }
+
+        .btn-pink:hover {
+            background-color: #c2186a;
+            color: white;
+            transform: scale(1.05); 
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark">
     <div class="container">
-        <a class="navbar-brand" href="index.html">Moji Web Zadaci</a>
+        <a class="navbar-brand fw-bold" href="index.html">Moji Web Zadaci</a>
         <div class="navbar-nav ms-auto">
             <a class="nav-link" href="osobna/index.html">Osobna</a>
             <a class="nav-link" href="kontakt/index.html">Kontakt</a>
@@ -18,25 +56,16 @@
 </nav>
 
 <main class="container mt-5">
-    <div class="p-5 mb-4 bg-white rounded-3 shadow-sm">
-        <div class="container-fluid py-5">
-            <h1 class="display-5 fw-bold">Dobrodošli!</h1>
-            <p class="col-md-8 fs-4">Ovo je moja početna stranica na kojoj objavljujem svoje web zadatke.</p>
-            <a href="osobna/index.html" class="btn btn-pink btn-lg">Saznaj više o meni</a>
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <div class="hero-box">
+                <h1 class="display-4 fw-bold mb-4">Dobrodošli!</h1>
+                <p class="lead text-muted mb-5">Ovo je moja početna stranica na kojoj objavljujem svoje web zadatke.</p>
+                <a href="osobna/index.html" class="btn btn-pink btn-lg">Saznaj više o meni</a>
+            </div>
         </div>
     </div>
 </main>
-
-<style>
-.btn-pink {
-    background: #d63384;
-    color: white;
-}
-.btn-pink:hover {
-    background: #c2186a;
-    color: white;
-}
-</style>
 
 </body>
 </html>
