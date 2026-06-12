@@ -32,56 +32,45 @@
 
         <form action="#" method="GET" id="kontaktForma">
 
-            <div class="row">
+    <div class="row">
+        <div class="col-md-6 mb-3">
+            <label>Ime</label>
+            <input type="text"
+                   class="form-control"
+                   name="ime"
+                   required
+                   pattern="[A-Za-zČĆŽŠĐčćžšđ]+">
+        </div>
 
-                <div class="col-md-6 mb-3">
-                    <label>Ime</label>
-                    <input type="text"
-                           class="form-control"
-                           name="ime"
-                           required
-                           pattern="[A-Za-z]+">
-                </div>
+        <div class="col-md-6 mb-3">
+            <label>Email</label>
+            <input type="email"
+                   class="form-control"
+                   name="email"
+                   required>
+        </div>
+    </div>
 
-                <div class="col-md-6 mb-3">
-                    <label>Prezime</label>
-                    <input type="text"
-                           class="form-control"
-                           name="prezime"
-                           required
-                           pattern="[A-Za-zČĆŽŠĐčćžšđ]+">
-                </div>
+    <div class="mb-3">
+        <label>Datum</label>
+        <input type="date"
+               class="form-control"
+               name="datum">
+    </div>
 
-            </div>
+    <div class="mb-3">
+        <label>Poruka</label>
+        <textarea class="form-control"
+                  name="poruka"
+                  rows="5"
+                  required></textarea>
+    </div>
 
-            <div class="mb-3">
-                <label>Email</label>
-                <input type="email"
-                       class="form-control"
-                       name="email"
-                       required>
-            </div>
+    <button type="submit" class="btn btn-pink w-100">
+        Pošalji Poruku
+    </button>
 
-            <div class="mb-3">
-                <label>Datum</label>
-                <input type="date"
-                       class="form-control"
-                       name="datum">
-            </div>
-
-            <div class="mb-3">
-                <label>Poruka</label>
-                <textarea class="form-control"
-                          name="poruka"
-                          rows="5"
-                          required></textarea>
-            </div>
-
-            <button type="submit" class="btn btn-pink w-100">
-                Pošalji Poruku
-            </button>
-
-        </form>
+</form>
 
     </div>
 
